@@ -3,6 +3,7 @@ import { ArrowRight, Clock3, Leaf, MapPin, Menu, MessageCircle, Phone, X } from 
 import { useEffect, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import heroAsset from "@/assets/hero.jpg.asset.json";
 import nurseryAsset from "@/assets/nursery.jpg.asset.json";
 import succulentAsset from "@/assets/succulent.jpg.asset.json";
@@ -75,6 +76,7 @@ export const Route = createFileRoute("/")({
 function NurseryPage() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [selectedGalleryImage, setSelectedGalleryImage] = useState<{ url: string; alt: string } | null>(null);
   const categoryResultsRef = useRef<HTMLDivElement>(null);
   const activeCategory = plantCategories.find((category) => category.name === selectedCategory);
   const creditedPlants = activeCategory?.plants.filter((plant) => {
@@ -319,7 +321,56 @@ function NurseryPage() {
 
       <section className="bg-forest py-12 text-primary-foreground sm:py-16"><div className="section-shell grid grid-cols-2 gap-y-10 text-center md:grid-cols-4">{[['1000+','Healthy plants'],['100+','Green spaces'],['50+','Plant varieties'],['500+','Happy customers']].map(([value,label]) => <div key={label}><strong className="font-display text-4xl text-accent sm:text-5xl">{value}</strong><span className="mt-2 block text-xs font-semibold uppercase text-primary-foreground/70">{label}</span></div>)}</div></section>
 
-      <section id="gallery" className="scroll-mt-24 py-14 sm:py-20 md:py-28"><div className="section-shell"><div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end"><div><p className="text-xs font-bold uppercase text-primary">A glimpse of green</p><h2 className="mt-3 text-4xl font-semibold sm:text-6xl">Nature, ready to come home.</h2></div><Button asChild variant="outline" size="lg"><a href={whatsapp} target="_blank" rel="noreferrer">Request more photos <ArrowRight /></a></Button></div><div className="mt-12 grid h-[420px] grid-cols-2 grid-rows-2 gap-3 sm:h-[520px] sm:gap-4 md:h-[700px] md:grid-cols-4">{[heroAsset,nurseryAsset,roseAsset,jasmineAsset].map((image,i) => <img key={image.url} src={image.url} alt={["Tropical nursery display","Lush green nursery plants","Blooming rose","Fragrant jasmine"][i]} className={`size-full rounded-lg object-cover ${i === 0 ? 'md:col-span-2 md:row-span-2' : ''} ${i === 1 ? 'md:col-span-2' : ''}`} />)}</div></div></section>
+      <section id="gallery" className="scroll-mt-24 py-14 sm:py-20 md:py-28">
+        <div className="section-shell">
+          <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+            <div>
+              <p className="text-xs font-bold uppercase text-primary">A glimpse of green</p>
+              <h2 className="mt-3 text-4xl font-semibold sm:text-6xl">Nature, ready to come home.</h2>
+            </div>
+            <Button asChild variant="outline" size="lg">
+              <a href={whatsapp} target="_blank" rel="noreferrer">Request more photos <ArrowRight /></a>
+            </Button>
+          </div>
+          <div className="mt-12 grid h-[420px] grid-cols-2 grid-rows-2 gap-3 sm:h-[520px] sm:gap-4 md:h-[700px] md:grid-cols-4">
+            {[heroAsset, nurseryAsset, roseAsset, jasmineAsset].map((image, index) => {
+              const alt = ["Tropical nursery display", "Lush green nursery plants", "Blooming rose", "Fragrant jasmine"][index];
+
+              return (
+                <button
+                  key={image.url}
+                  type="button"
+                  aria-label={`Open image: ${alt}`}
+                  onClick={() => setSelectedGalleryImage({ url: image.url, alt })}
+                  className={`group size-full overflow-hidden rounded-lg text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${index === 0 ? "md:col-span-2 md:row-span-2" : ""} ${index === 1 ? "md:col-span-2" : ""}`}
+                >
+                  <img
+                    src={image.url}
+                    alt={alt}
+                    loading="lazy"
+                    className="size-full rounded-lg object-cover transition-transform duration-500 group-hover:scale-105 group-focus-visible:scale-105"
+                  />
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <Dialog open={selectedGalleryImage !== null} onOpenChange={(open) => { if (!open) setSelectedGalleryImage(null); }}>
+        <DialogContent className="w-[calc(100vw-2rem)] max-w-5xl border-0 bg-forest p-3 text-primary-foreground sm:p-5">
+          {selectedGalleryImage && (
+            <>
+              <img
+                src={selectedGalleryImage.url}
+                alt={selectedGalleryImage.alt}
+                className="max-h-[75vh] w-full rounded-md object-contain"
+              />
+              <DialogTitle className="text-center text-primary-foreground">{selectedGalleryImage.alt}</DialogTitle>
+            </>
+          )}
+        </DialogContent>
+      </Dialog>
 
       <section id="contact" className="scroll-mt-24 bg-cream py-14 sm:py-20 md:py-28"><div className="section-shell grid overflow-hidden rounded-lg bg-forest text-primary-foreground shadow-soft lg:grid-cols-2"><div className="p-6 sm:p-14"><p className="text-xs font-bold uppercase text-accent">Visit & contact</p><h2 className="mt-3 text-4xl font-semibold sm:text-6xl">Bring home a little piece of nature.</h2><p className="mt-5 max-w-lg leading-7 text-primary-foreground/75">Come by SVSS Nursery and discover the right plant for your space. Our team is happy to guide you.</p><div className="mt-9 space-y-5"><div className="flex gap-4"><MapPin className="mt-1 shrink-0 text-accent" /><p>Industrial Colony Rd, Dowlaiswaram Industrial Estate,<br/>Dhavaleswaram, Rajahmundry, Andhra Pradesh 533125</p></div><div className="flex gap-4"><Clock3 className="shrink-0 text-accent" /><p>Open daily • 9:00 AM – 7:00 PM</p></div><div className="flex gap-4"><Phone className="shrink-0 text-accent" /><a href="tel:+918074172504">{phone}</a></div></div><div className="mt-9 flex flex-wrap gap-3"><Button asChild variant="cream" size="lg"><a href={whatsapp} target="_blank" rel="noreferrer"><MessageCircle /> WhatsApp Us</a></Button><Button asChild variant="outline" size="lg" className="border-primary-foreground/40 bg-transparent text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"><a href="tel:+918074172504"><Phone /> Call Now</a></Button></div></div><div className="min-h-96"><img src={hibiscusAsset.url} alt="Bright hibiscus flower available at SVSS Nursery" className="size-full object-cover" /></div></div></section>
 
