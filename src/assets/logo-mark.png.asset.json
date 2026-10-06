@@ -1,11 +1,11 @@
-{
-  "version": 1,
-  "asset_id": "c860a8ea-377f-4f95-a88a-c7f9b6250f33",
-  "project_id": "64091043-4250-4688-9547-f7c767ae4697",
-  "url": "/__l5e/assets-v1/c860a8ea-377f-4f95-a88a-c7f9b6250f33/logo-mark.png",
-  "r2_key": "a/v1/64091043-4250-4688-9547-f7c767ae4697/c860a8ea-377f-4f95-a88a-c7f9b6250f33/logo-mark.png",
-  "original_filename": "logo-mark.png",
-  "size": 85670,
-  "content_type": "image/png",
-  "created_at": "2026-10-05T07:26:58Z"
+﻿{
+    "version":  1,
+    "asset_id":  "c860a8ea-377f-4f95-a88a-c7f9b6250f33",
+    "project_id":  "64091043-4250-4688-9547-f7c767ae4697",
+    "url":  "/images/logo-mark.png",
+    "r2_key":  "a/v1/64091043-4250-4688-9547-f7c767ae4697/c860a8ea-377f-4f95-a88a-c7f9b6250f33/logo-mark.png",
+    "original_filename":  "logo-mark.png",
+    "size":  85670,
+    "content_type":  "image/png",
+    "created_at":  "2026-10-05T07:26:58Z"
 }

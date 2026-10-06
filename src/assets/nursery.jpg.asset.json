@@ -1,11 +1,11 @@
-{
-  "version": 1,
-  "asset_id": "f90a3e94-09b6-429d-836b-8564f9920cf6",
-  "project_id": "64091043-4250-4688-9547-f7c767ae4697",
-  "url": "/__l5e/assets-v1/f90a3e94-09b6-429d-836b-8564f9920cf6/nursery.jpg",
-  "r2_key": "a/v1/64091043-4250-4688-9547-f7c767ae4697/f90a3e94-09b6-429d-836b-8564f9920cf6/nursery.jpg",
-  "original_filename": "nursery.jpg",
-  "size": 515747,
-  "content_type": "image/jpeg",
-  "created_at": "2026-10-05T07:27:01Z"
+﻿{
+    "version":  1,
+    "asset_id":  "f90a3e94-09b6-429d-836b-8564f9920cf6",
+    "project_id":  "64091043-4250-4688-9547-f7c767ae4697",
+    "url":  "/images/nursery.jpg",
+    "r2_key":  "a/v1/64091043-4250-4688-9547-f7c767ae4697/f90a3e94-09b6-429d-836b-8564f9920cf6/nursery.jpg",
+    "original_filename":  "nursery.jpg",
+    "size":  515747,
+    "content_type":  "image/jpeg",
+    "created_at":  "2026-10-05T07:27:01Z"
 }

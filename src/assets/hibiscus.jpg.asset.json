@@ -1,11 +1,11 @@
-{
-  "version": 1,
-  "asset_id": "0abebece-cc05-4aa0-bda1-3c06b7c290a5",
-  "project_id": "64091043-4250-4688-9547-f7c767ae4697",
-  "url": "/__l5e/assets-v1/0abebece-cc05-4aa0-bda1-3c06b7c290a5/hibiscus.jpg",
-  "r2_key": "a/v1/64091043-4250-4688-9547-f7c767ae4697/0abebece-cc05-4aa0-bda1-3c06b7c290a5/hibiscus.jpg",
-  "original_filename": "hibiscus.jpg",
-  "size": 378587,
-  "content_type": "image/jpeg",
-  "created_at": "2026-10-05T07:26:54Z"
+﻿{
+    "version":  1,
+    "asset_id":  "0abebece-cc05-4aa0-bda1-3c06b7c290a5",
+    "project_id":  "64091043-4250-4688-9547-f7c767ae4697",
+    "url":  "/images/hibiscus.jpg",
+    "r2_key":  "a/v1/64091043-4250-4688-9547-f7c767ae4697/0abebece-cc05-4aa0-bda1-3c06b7c290a5/hibiscus.jpg",
+    "original_filename":  "hibiscus.jpg",
+    "size":  378587,
+    "content_type":  "image/jpeg",
+    "created_at":  "2026-10-05T07:26:54Z"
 }

@@ -1,11 +1,11 @@
-{
-  "version": 1,
-  "asset_id": "c4c67446-b964-4cd6-aac1-5869a5215b6d",
-  "project_id": "64091043-4250-4688-9547-f7c767ae4697",
-  "url": "/__l5e/assets-v1/c4c67446-b964-4cd6-aac1-5869a5215b6d/succulent.jpg",
-  "r2_key": "a/v1/64091043-4250-4688-9547-f7c767ae4697/c4c67446-b964-4cd6-aac1-5869a5215b6d/succulent.jpg",
-  "original_filename": "succulent.jpg",
-  "size": 272626,
-  "content_type": "image/jpeg",
-  "created_at": "2026-10-05T07:27:07Z"
+﻿{
+    "version":  1,
+    "asset_id":  "c4c67446-b964-4cd6-aac1-5869a5215b6d",
+    "project_id":  "64091043-4250-4688-9547-f7c767ae4697",
+    "url":  "/images/succulent.jpg",
+    "r2_key":  "a/v1/64091043-4250-4688-9547-f7c767ae4697/c4c67446-b964-4cd6-aac1-5869a5215b6d/succulent.jpg",
+    "original_filename":  "succulent.jpg",
+    "size":  272626,
+    "content_type":  "image/jpeg",
+    "created_at":  "2026-10-05T07:27:07Z"
 }

@@ -1,0 +1,296 @@
+{
+  "Peace Lily": {
+    "url": "/images/plants/peace-lily.jpg",
+    "attribution": "W.carter",
+    "source": "https://commons.wikimedia.org/wiki/File:Peace_lily_-_2.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Lucky Bamboo": {
+    "url": "/images/plants/lucky-bamboo.jpg",
+    "attribution": "User SeanMack on en.wikipedia",
+    "source": "https://commons.wikimedia.org/wiki/File:LuckyBamboo_2005_SeanMcClean.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "ZZ Plant": {
+    "url": "/images/plants/zz-plant.jpg",
+    "attribution": "User:WeFt",
+    "source": "https://commons.wikimedia.org/wiki/File:Zamioculcas_zamiifolia_1.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "Ixora": {
+    "url": "/images/plants/ixora.jpg",
+    "attribution": "Wilfredor",
+    "source": "https://commons.wikimedia.org/wiki/File:Ixora_coccinea_(Rubiaceae).jpg",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "Croton": {
+    "url": "/images/plants/croton.jpg",
+    "attribution": "Joydeep",
+    "source": "https://commons.wikimedia.org/wiki/File:Codiaeum_variegatum_31032014.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Bougainvillea": {
+    "url": "/images/plants/bougainvillea.jpg",
+    "attribution": "Prenn",
+    "source": "https://commons.wikimedia.org/wiki/File:Bougainvillea_spectabilis_01.JPG",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Gerbera": {
+    "url": "/images/plants/gerbera.jpg",
+    "attribution": "Suyash Dwivedi",
+    "source": "https://commons.wikimedia.org/wiki/File:Gerbera_flower_at_Bharat_Bhavan_garden.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Marigold": {
+    "url": "/images/plants/marigold.jpg",
+    "attribution": "Zuhairali",
+    "source": "https://commons.wikimedia.org/wiki/File:Tagetes_erecta_Mallika3.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Tagetes_erecta_Mallika3.jpg"
+  },
+  "Chrysanthemum": {
+    "url": "/images/plants/chrysanthemum.jpg",
+    "attribution": "Ermell",
+    "source": "https://commons.wikimedia.org/wiki/File:Chrysantheme_rot_tautropfen_-20191024-RM-102058.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Lemon": {
+    "url": "/images/plants/lemon.jpg",
+    "attribution": "Wikimedia Commons contributor",
+    "source": "https://commons.wikimedia.org/wiki/File:Lemon_tree_flowers_with_ant.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Lemon_tree_flowers_with_ant.jpg"
+  },
+  "Mango": {
+    "url": "/images/plants/mango.jpg",
+    "attribution": "Yann (talk)",
+    "source": "https://commons.wikimedia.org/wiki/File:Mango_tree_flowers,_Umaria_district,_MP,_India.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Guava": {
+    "url": "/images/plants/guava.jpg",
+    "attribution": "Joydeep",
+    "source": "https://commons.wikimedia.org/wiki/File:Psidium_guajava_leafbud_26032014.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Sapota": {
+    "url": "/images/plants/sapota.jpg",
+    "attribution": "Wikimedia Commons contributor",
+    "source": "https://commons.wikimedia.org/wiki/File:ARS-_Pouteria_sapota.jpg",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:ARS-_Pouteria_sapota.jpg"
+  },
+  "Snake Plant": {
+    "url": "/images/plants/snake-plant.jpg",
+    "attribution": "Derek Ramsey (Ram-Man); Chanticleer Garden",
+    "source": "https://commons.wikimedia.org/wiki/File:Sansevieria_trifasciata_Plant_3264px.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "Pomegranate": {
+    "url": "/images/plants/pomegranate.jpg",
+    "attribution": "Prahlad balaji",
+    "source": "https://commons.wikimedia.org/wiki/File:Pomegranate_plant_1.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Papaya": {
+    "url": "/images/plants/papaya.jpg",
+    "attribution": "Joydeep",
+    "source": "https://commons.wikimedia.org/wiki/File:Carica_papaya_14_7_2012.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Tomato": {
+    "url": "/images/plants/tomato.jpg",
+    "attribution": "George Chernilevsky",
+    "source": "https://commons.wikimedia.org/wiki/File:Tomato_plant_2026_G2.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Tomato_plant_2026_G2.jpg"
+  },
+  "Chilli": {
+    "url": "/images/plants/chilli.jpg",
+    "attribution": "Challiyan",
+    "source": "https://commons.wikimedia.org/wiki/File:Chilli_plant_2.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Dragon Fruit": {
+    "url": "/images/plants/dragon-fruit.jpg",
+    "attribution": "Vimalananth V",
+    "source": "https://commons.wikimedia.org/wiki/File:Dragon_fruit_plant.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Brinjal": {
+    "url": "/images/plants/brinjal.jpg",
+    "attribution": "Joydeep",
+    "source": "https://commons.wikimedia.org/wiki/File:Solanum_melongena_24_08_2012_(1).JPG",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Drumstick": {
+    "url": "/images/plants/drumstick.jpg",
+    "attribution": "Venkatx5",
+    "source": "https://commons.wikimedia.org/wiki/File:DrumstickFlower.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Curry Leaf": {
+    "url": "/images/plants/curry-leaf.jpg",
+    "attribution": "Adityamadhav83",
+    "source": "https://commons.wikimedia.org/wiki/File:(Murraya_koenigii)_curry_leaf_plant_at_Kambalakonda_Eco_park.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Spinach": {
+    "url": "/images/plants/spinach.jpg",
+    "attribution": "Rasbak",
+    "source": "https://commons.wikimedia.org/wiki/File:Spinacia_oleracea_Spinazie_bloeiend.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "Tulsi": {
+    "url": "/images/plants/tulsi.jpg",
+    "attribution": "Joydeep",
+    "source": "https://commons.wikimedia.org/wiki/File:Ocimum_tenuiflorum_3_09_2012.JPG",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Aloe Vera": {
+    "url": "/images/plants/aloe-vera.jpg",
+    "attribution": "H. Zell",
+    "source": "https://commons.wikimedia.org/wiki/File:Aloe_vera_Lanzarote.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Lemongrass": {
+    "url": "/images/plants/lemongrass.jpg",
+    "attribution": "Wikimedia Commons contributor",
+    "source": "https://commons.wikimedia.org/wiki/File:YosriNov04Pokok_Serai.JPG",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "Neem": {
+    "url": "/images/plants/neem.jpg",
+    "attribution": "Roger Culos",
+    "source": "https://commons.wikimedia.org/wiki/File:Azadirachta_indica_MHNT.BOT.2007.40.124.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Mint": {
+    "url": "/images/plants/mint.jpg",
+    "attribution": "Netha Hussain",
+    "source": "https://commons.wikimedia.org/wiki/File:Mint_plant_in_water.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Ashwagandha": {
+    "url": "/images/plants/ashwagandha.jpg",
+    "attribution": "Roger Culos",
+    "source": "https://commons.wikimedia.org/wiki/File:Withania_somnifera_MHNT.BOT.2012.10.13.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Dracaena": {
+    "url": "/images/plants/dracaena.jpg",
+    "attribution": "H. Zell",
+    "source": "https://commons.wikimedia.org/wiki/File:Dracaena_ellenbeckiana_-_Jard%C3%ADn_Bot%C3%A1nico_Canario_Viera_y_Clavijo_-_Gran_Canaria.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Aglaonema": {
+    "url": "/images/plants/aglaonema.jpg",
+    "attribution": "H. Zell",
+    "source": "https://commons.wikimedia.org/wiki/File:Aglaonema_costatum_001.JPG",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Fan Palm": {
+    "url": "/images/plants/fan-palm.jpg",
+    "attribution": "tato grasso",
+    "source": "https://commons.wikimedia.org/wiki/File:Chamaerops_humilis_(Zingaro)015.jpg",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "Coleus": {
+    "url": "/images/plants/coleus.jpg",
+    "attribution": "PumpkinSky",
+    "source": "https://commons.wikimedia.org/wiki/File:Plectranthus_scutellarioides_NBG_LR.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Cordyline": {
+    "url": "/images/plants/cordyline.jpg",
+    "attribution": "Didier Descouens",
+    "source": "https://commons.wikimedia.org/wiki/File:(MHNT)_Cordyline_australis_-_inflorescence_immature.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Date Palm": {
+    "url": "/images/plants/date-palm.jpg",
+    "attribution": "MPF",
+    "source": "https://commons.wikimedia.org/wiki/File:Phoenix_dactylifera0.jpg",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+  },
+  "Echeveria": {
+    "url": "/images/plants/echeveria.jpg",
+    "attribution": "Diego Delso",
+    "source": "https://commons.wikimedia.org/wiki/File:Rosa_de_alabastro_(Echeveria_elegans),_jard%C3%ADn_del_molino,_Sierra_de_San_Felipe,_Set%C3%BAbal,_Portugal,_2012-05-11,_DD_01.JPG",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Foxtail Palm": {
+    "url": "/images/plants/foxtail-palm.jpg",
+    "attribution": "Wee Hong",
+    "source": "https://commons.wikimedia.org/wiki/File:Wodyetia_bifurcata_(181218-1748).jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Wodyetia_bifurcata_(181218-1748).jpg"
+  },
+  "Jade Plant": {
+    "url": "/images/plants/jade-plant.jpg",
+    "attribution": "W.carter",
+    "source": "https://commons.wikimedia.org/wiki/File:Among_the_branches_of_a_potted_jade_plant.jpg",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "Haworthia": {
+    "url": "/images/plants/haworthia.jpg",
+    "attribution": "Didier Descouens",
+    "source": "https://commons.wikimedia.org/wiki/File:(MHNT)_Haworthia_cooperi_var._truncata.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Various Cactus": {
+    "url": "/images/plants/various-cactus.jpg",
+    "attribution": "Billjones94",
+    "source": "https://commons.wikimedia.org/wiki/File:Various_plants_and_cactuses_photographed_at_a_nursery_in_Karunamoyee,_Kolkata,_West_Bengal,_India,_January_30,_2024.jpg",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "Rangoon Creeper": {
+    "url": "/images/plants/rangoon-creeper.jpg",
+    "attribution": "Prenn",
+    "source": "https://commons.wikimedia.org/wiki/File:Combretum_indicum_01.JPG",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Passion Flower": {
+    "url": "/images/plants/passion-flower.jpg",
+    "attribution": "Petar Milošević",
+    "source": "https://commons.wikimedia.org/wiki/File:Passiflora_caerulea_(makro_close-up).jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  }
+}

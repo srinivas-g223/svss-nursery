@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="Ficus bonsai tree">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef5e8"/>
+      <stop offset="100%" stop-color="#d6e6cd"/>
+    </linearGradient>
+    <linearGradient id="pot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a95535"/>
+      <stop offset="100%" stop-color="#713b2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#background)"/>
+  <circle cx="400" cy="340" r="230" fill="#fff" opacity=".22"/>
+  <ellipse cx="400" cy="650" rx="245" ry="38" fill="#526b42" opacity=".18"/>
+  <path d="M360 552c32-102 18-182 3-259-9-47-10-88 16-127 7 60 29 92 61 125 35 37 52 82 34 145-9 33-27 70-47 116l-21 38z" fill="#765039"/>
+  <path d="M378 421c-43-42-76-79-112-100-36-20-65-26-105-17 39 9 64 28 86 61 29 43 62 65 113 82z" fill="#765039"/>
+  <path d="M410 367c43-49 84-84 135-99 34-10 61-9 93 6-42-1-77 18-103 49-31 36-66 58-123 68z" fill="#765039"/>
+  <g fill="#347548">
+    <ellipse cx="194" cy="281" rx="97" ry="57" transform="rotate(15 194 281)"/>
+    <ellipse cx="279" cy="223" rx="107" ry="62" transform="rotate(-17 279 223)"/>
+    <ellipse cx="376" cy="213" rx="104" ry="68" transform="rotate(8 376 213)"/>
+    <ellipse cx="494" cy="224" rx="111" ry="63" transform="rotate(-12 494 224)"/>
+    <ellipse cx="602" cy="280" rx="96" ry="59" transform="rotate(16 602 280)"/>
+    <ellipse cx="271" cy="326" rx="104" ry="60" transform="rotate(17 271 326)"/>
+    <ellipse cx="503" cy="329" rx="112" ry="61" transform="rotate(-15 503 329)"/>
+    <ellipse cx="389" cy="297" rx="110" ry="70"/>
+  </g>
+  <g fill="#6da565" opacity=".9">
+    <circle cx="233" cy="267" r="17"/><circle cx="322" cy="218" r="18"/>
+    <circle cx="425" cy="226" r="18"/><circle cx="539" cy="244" r="17"/>
+    <circle cx="310" cy="316" r="16"/><circle cx="478" cy="317" r="18"/>
+  </g>
+  <path d="M250 553h300l-34 139H284z" fill="url(#pot)"/>
+  <ellipse cx="400" cy="554" rx="150" ry="24" fill="#b66b47"/>
+  <path d="M285 588h230" stroke="#d08b66" stroke-width="10" stroke-linecap="round" opacity=".55"/>
+</svg>
