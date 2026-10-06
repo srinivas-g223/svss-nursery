@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, Clock3, Leaf, MapPin, Menu, MessageCircle, Phone, X } from "lucide-react";
+import { ArrowLeft, ArrowRight, Clock3, Leaf, MapPin, Menu, MessageCircle, Phone, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -52,6 +52,13 @@ const navigation = [
   ["Home", "#home"], ["About", "#about"], ["Plants", "#plants"], ["Services", "#services"], ["Gallery", "#gallery"], ["Contact", "#contact"],
 ] as const;
 
+const galleryImages = [
+  { image: heroAsset, alt: "Tropical nursery display" },
+  { image: nurseryAsset, alt: "Lush green nursery plants" },
+  { image: roseAsset, alt: "Blooming rose" },
+  { image: jasmineAsset, alt: "Fragrant jasmine" },
+];
+
 const services = [
   { title: "Plants & Saplings", copy: "Healthy plants and young saplings to bring more life to your home and garden.", image: arecaAsset.url, imageAlt: "Healthy areca palm plants growing at the nursery", photoCredit: null },
   { title: "Garden Landscaping", copy: "Thoughtful garden layouts and greenery ideas for your outdoor spaces.", image: "/images/about-nursery.jpg", imageAlt: "Colorful flowering plants arranged through a garden nursery", photoCredit: null },
@@ -76,8 +83,10 @@ export const Route = createFileRoute("/")({
 function NurseryPage() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [selectedGalleryImage, setSelectedGalleryImage] = useState<{ url: string; alt: string } | null>(null);
+  const [selectedGalleryImage, setSelectedGalleryImage] = useState<number | null>(null);
   const categoryResultsRef = useRef<HTMLDivElement>(null);
+  const galleryTouchStartRef = useRef<{ x: number; y: number } | null>(null);
+  const activeGalleryImage = selectedGalleryImage === null ? null : galleryImages[selectedGalleryImage];
   const activeCategory = plantCategories.find((category) => category.name === selectedCategory);
   const creditedPlants = activeCategory?.plants.filter((plant) => {
     const photo = plantImages[plant];
@@ -333,15 +342,13 @@ function NurseryPage() {
             </Button>
           </div>
           <div className="mt-12 grid h-[420px] grid-cols-2 grid-rows-2 gap-3 sm:h-[520px] sm:gap-4 md:h-[700px] md:grid-cols-4">
-            {[heroAsset, nurseryAsset, roseAsset, jasmineAsset].map((image, index) => {
-              const alt = ["Tropical nursery display", "Lush green nursery plants", "Blooming rose", "Fragrant jasmine"][index];
-
+            {galleryImages.map(({ image, alt }, index) => {
               return (
                 <button
                   key={image.url}
                   type="button"
                   aria-label={`Open image: ${alt}`}
-                  onClick={() => setSelectedGalleryImage({ url: image.url, alt })}
+                  onClick={() => setSelectedGalleryImage(index)}
                   className={`group size-full overflow-hidden rounded-lg text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${index === 0 ? "md:col-span-2 md:row-span-2" : ""} ${index === 1 ? "md:col-span-2" : ""}`}
                 >
                   <img
@@ -357,16 +364,55 @@ function NurseryPage() {
         </div>
       </section>
 
-      <Dialog open={selectedGalleryImage !== null} onOpenChange={(open) => { if (!open) setSelectedGalleryImage(null); }}>
-        <DialogContent className="w-[calc(100vw-2rem)] max-w-5xl border-0 bg-forest p-3 text-primary-foreground sm:p-5">
-          {selectedGalleryImage && (
+      <Dialog open={activeGalleryImage !== null} onOpenChange={(open) => { if (!open) setSelectedGalleryImage(null); }}>
+        <DialogContent
+          className="w-[calc(100vw-2rem)] max-w-5xl touch-pan-y border-0 bg-forest p-3 text-primary-foreground sm:p-5"
+          onTouchStart={(event) => {
+            const touch = event.touches[0];
+            galleryTouchStartRef.current = { x: touch.clientX, y: touch.clientY };
+          }}
+          onTouchEnd={(event) => {
+            const start = galleryTouchStartRef.current;
+            const touch = event.changedTouches[0];
+            galleryTouchStartRef.current = null;
+            if (!start || selectedGalleryImage === null) return;
+
+            const deltaX = touch.clientX - start.x;
+            const deltaY = touch.clientY - start.y;
+            if (Math.abs(deltaX) < 50 || Math.abs(deltaX) <= Math.abs(deltaY)) return;
+
+            setSelectedGalleryImage((selectedGalleryImage + (deltaX < 0 ? 1 : -1) + galleryImages.length) % galleryImages.length);
+          }}
+        >
+          {activeGalleryImage && selectedGalleryImage !== null && (
             <>
-              <img
-                src={selectedGalleryImage.url}
-                alt={selectedGalleryImage.alt}
-                className="max-h-[75vh] w-full rounded-md object-contain"
-              />
-              <DialogTitle className="text-center text-primary-foreground">{selectedGalleryImage.alt}</DialogTitle>
+              <div className="relative flex min-h-48 items-center justify-center">
+                <img
+                  src={activeGalleryImage.image.url}
+                  alt={activeGalleryImage.alt}
+                  className="max-h-[75vh] w-full rounded-md object-contain"
+                />
+                <button
+                  type="button"
+                  aria-label="Previous gallery image"
+                  onClick={() => setSelectedGalleryImage((selectedGalleryImage - 1 + galleryImages.length) % galleryImages.length)}
+                  className="absolute left-2 top-1/2 inline-flex size-10 -translate-y-1/2 items-center justify-center rounded-full bg-forest/85 text-primary-foreground shadow-lift hover:bg-forest focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-foreground"
+                >
+                  <ArrowLeft className="size-5" />
+                </button>
+                <button
+                  type="button"
+                  aria-label="Next gallery image"
+                  onClick={() => setSelectedGalleryImage((selectedGalleryImage + 1) % galleryImages.length)}
+                  className="absolute right-2 top-1/2 inline-flex size-10 -translate-y-1/2 items-center justify-center rounded-full bg-forest/85 text-primary-foreground shadow-lift hover:bg-forest focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-foreground"
+                >
+                  <ArrowRight className="size-5" />
+                </button>
+              </div>
+              <DialogTitle className="text-center text-primary-foreground">{activeGalleryImage.alt}</DialogTitle>
+              <p aria-live="polite" className="text-center text-xs text-primary-foreground/70">
+                {selectedGalleryImage + 1} / {galleryImages.length} · Swipe to browse
+              </p>
             </>
           )}
         </DialogContent>
