@@ -20,7 +20,7 @@ export default defineConfig(({ command }) => ({
       server: { entry: "server" },
     }),
     react(),
-    ...(command === "build" ? [nitro({ preset: "cloudflare-module" })] : []),
+    ...(command === "build" ? [nitro({ preset: "vercel" })] : []),
   ],
   resolve: {
     alias: {

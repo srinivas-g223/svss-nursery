@@ -12,3 +12,14 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+## Deploy to Vercel
+
+The production build uses Nitro's Vercel preset and writes the Vercel Build Output API files to `.vercel/output`.
+
+```sh
+npm run build
+vercel deploy --prebuilt
+```
+
+Alternatively, import this repository into Vercel and use `npm run build` as the build command.
